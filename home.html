@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
+  <title>Social-Kick</title>
+</head>
+
+<body>
+
+
+
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+
+  <div class="col-md-2 col-sm-2 col-xs-2 sub">
+    <label class="sub-label" for="subject">What do you want to post ?? </label>
+  </div>
+
+  <div class="col-md-6 col-sm-6 col-xs-6 input-field">
+
+    <form action="form.php" method="post">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <textarea id="subject" name="subject" placeholder=" Write something.."></textarea>
+        </div>
+
+
+
+        <div class="col-md-3 col-sm-3 col-xs-3 post-check">
+          <div class="post-twitter">
+            <input type="checkbox" id="posttwitter" name="twitter" value="twitter">
+            <label for="posttwitter">Post on Twitter ?</label>
+          </div>
+          <div>
+            <input type="checkbox" id="postfacebook" name="facebook" value="facebook">
+            <label for="postfacebook">Post on Facebook ?</label>
+          </div>
+          <div>
+            <input type="checkbox" id="postslack" name="slack" value="slack">
+            <label for="postslack">Post on Slack ?</label>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3 post-button">
+          <input class="button" type="submit" name="submit" value="submit">
+        </div>
+      </div>
+
+
+
+    </form>
+  </div>
+  <div class="col-md-2 col-sm-2 col-xs-2 emoji-mid">
+    <span class="glyphicon glyphicon-send"></span>
+  </div>
+  <div class="col-md-2 col-sm-2 col-xs-2 emoji-end">
+      <span class="logo">
+          <img class="img" alt="" src="img/twitter.png"/>
+        </span>
+    <span class="logo">
+          <img class="img" alt="" src="img/fb.png"/>
+        </span>
+    <span class="logo">
+          <img class="img" alt="" src="img/slack.svg"/>
+        </span>
+  </div>
+</div>
+
+</body>
+
+
+
+
+</html>

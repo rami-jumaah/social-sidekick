@@ -10,7 +10,7 @@ $slack = $_POST["slack"];
 
 if(!empty($twitter)){
 
-    // this part will not work, Ask Rami for it
+    // the Twitter will not work now, because this part has a private key which shouldn't be online, you can Ask Rami for it.
 
     $params = array(
         'status' => $subject
@@ -42,7 +42,7 @@ if (!empty($slack)){
         global $subject;
         $ch = curl_init("https://slack.com/api/chat.postMessage");
         $data = http_build_query([
-            "token" => "Ask Rami for this part too",
+            "token" => "Ask Rami for this part too", // the Slack will not work too, because this part has a private key which shouldn't be online, you can Ask Rami for it.
             "channel" => $channel, "#m122-rami_fabi_alvin",
             "text" => $message, $subject,
             "username" => "M122",
